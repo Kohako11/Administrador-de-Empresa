@@ -99,6 +99,7 @@ Temos as seguintes opções:
             
             elif função == 'V':
                 empresa.lista_de_funcionarios()
+                time.sleep(10)
                 os.system('cls' if os.name == 'nt' else 'clear')
 
         elif escolha == 'F':
@@ -127,6 +128,7 @@ Temos as seguintes opções:
                 for funcionário in empresa.funcionarios:
                     if funcionário.nome == nome_do_funcionário:
                         funcionário.exibir_funcionarios()
+                        time.sleep(10)
                         os.system('cls' if os.name == 'nt' else 'clear')
                 else:
                     print(f'O nome {nome_do_funcionário} não foi encontrado')
